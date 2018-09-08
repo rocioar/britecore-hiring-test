@@ -89,9 +89,6 @@ class RiskEntryValues(models.Model):
     field = models.ForeignKey(Field, on_delete=models.CASCADE)
     value = models.CharField(max_length=255)
 
-    def clean(self):
-        field.field_type.validate(self.value)
-
     class Meta:
         verbose_name = 'Risk Entry Value'
         verbose_name_plural = 'Risk Entry Values'

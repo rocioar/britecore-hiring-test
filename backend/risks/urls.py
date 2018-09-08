@@ -11,5 +11,5 @@ router.register(r'field', views.FieldViewSet)
 router.register(r'field_type', views.FieldTypeViewSet)
 
 urlpatterns = [
-    re_path(r'^', include((router.urls, 'risks-api'))),
+    re_path(r'^', include((router.urls))),
 ]

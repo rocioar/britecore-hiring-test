@@ -1,7 +1,7 @@
 """ Serializers for Risks app. """
 from rest_framework import serializers
 
-from risks.models import RiskType, Field, FieldType, EnumOption
+from risks.models import RiskType, Field, FieldType
 
 
 class FieldTypeSerializer(serializers.ModelSerializer):
