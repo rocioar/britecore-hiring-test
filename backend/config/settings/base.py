@@ -71,8 +71,6 @@ AUTHENTICATION_BACKENDS = [
 # PASSWORDS
 # ------------------------------------------------------------------------------
 PASSWORD_HASHERS = [
-    # https://docs.djangoproject.com/en/dev/topics/auth/passwords/#using-argon2-with-django
-    'django.contrib.auth.hashers.Argon2PasswordHasher',
     'django.contrib.auth.hashers.PBKDF2PasswordHasher',
     'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
     'django.contrib.auth.hashers.BCryptSHA256PasswordHasher',
@@ -170,6 +168,5 @@ ADMINS = [
 ]
 MANAGERS = ADMINS
 
-#CORS
+# CORS
 CORS_ORIGIN_ALLOW_ALL = True
-
