@@ -3,23 +3,30 @@
     <b-form v-show="show">
         <b-form-group v-show="show" v-for='field in riskType.fields' :key="field.name"
                     :label="field.name" :label-for="field.name">
-            <b-form-input :id="field.name" type="text">
-            </b-form-input>
+            <field
+              :field="field"
+              v-model="values[field.name]"
+              :key="field.id"
+            >
+            </field>
         </b-form-group>
-        <b-button type="submit" variant="primary">Submit</b-button>
+        <b-button type="submit" @click.prevent="showValues" variant="primary">Submit</b-button>
         <b-button type="reset" variant="danger">Reset</b-button>
     </b-form>
   </div>
 </template>
 
 <script>
+import RiskTypeField from '@/components/RiskTypeField'
+
 import axios from 'axios'
 
 export default {
   data: () => {
     return {
       riskType: {fields: []},
-      show: false
+      show: false,
+      values: {}
     }
   },
 
@@ -37,7 +44,14 @@ export default {
       }).catch(error => {
         console.log(error)
       })
+    },
+    showValues () {
+      console.log(this.values)
     }
+  },
+
+  components: {
+    'field': RiskTypeField
   }
 }
 </script>
