@@ -1,8 +1,11 @@
-# brite-core
 
-> A Vue.js project
+Brite Core Hiring Test frontend
+===============================
 
-## Build Setup
+Frontend for britecore-api that lets you visualize the list of RiskTypes and builds custom forms.
+
+Run in development
+------------------
 
 ``` bash
 # install dependencies
@@ -10,18 +13,18 @@ npm install
 
 # serve with hot reload at localhost:8080
 npm run dev
+```
 
+Build and Deploy
+----------------
+
+``` bash
 # build for production with minification
 npm run build
 
-# build for production and view the bundle analyzer report
-npm run build --report
+# install and configure aws-cli with your credentials
+pip install aws
+aws configure
 
-# run unit tests
-npm run unit
-
-# run all tests
-npm test
+npm run deploy <bucket_name>
 ```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

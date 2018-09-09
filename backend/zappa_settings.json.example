@@ -4,7 +4,7 @@
         "profile_name": null,
         "project_name": "britecorehiringtest",
         "runtime": "python3.6",
-        "s3_bucket": "",
+        "s3_bucket": "zappa-bucket",
         "aws_region": "us-east-1",
         "aws_environment_variables": {
             "DJANGO_READ_DOT_ENV_FILE": "true",
