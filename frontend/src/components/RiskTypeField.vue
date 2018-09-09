@@ -16,10 +16,10 @@ import {
 } from '@/components/fields'
 
 const fieldTypeToComponentMapping = {
-  TEXT: TextField,
-  NUMBER: NumberField,
-  DATE: DateField,
-  ENUM: EnumField
+  text: TextField,
+  number: NumberField,
+  date: DateField,
+  enum: EnumField
 }
 
 export default {
