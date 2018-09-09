@@ -7,7 +7,7 @@ import axios from 'axios'
 import App from './app'
 import router from '@/routes'
 
-axios.defaults.baseURL = 'https://britecoreapi.schegel.net'
+axios.defaults.baseURL = process.env.ROOT_API
 
 Vue.config.productionTip = false
 Vue.use(BootstrapVue)
