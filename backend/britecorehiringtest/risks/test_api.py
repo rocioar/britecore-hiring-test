@@ -7,7 +7,7 @@ from django.urls import reverse
 
 from rest_framework.test import APIRequestFactory, APIClient
 
-from risks.views import RiskTypeViewSet
+from .views import RiskTypeViewSet
 
 
 @pytest.mark.django_db

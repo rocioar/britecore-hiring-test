@@ -7,7 +7,7 @@ from django.contrib import admin
 urlpatterns = [
     # Django Admin, use {% url 'admin:index' %}
     path(settings.ADMIN_URL, admin.site.urls),
-    path(r'', include(('risks.urls', 'risks'), namespace='risks')),
+    path(r'', include(('britecorehiringtest.risks.urls', 'risks'), namespace='risks')),
     # Your stuff: custom urls includes go here
 ] + static(
     settings.MEDIA_URL, document_root=settings.MEDIA_ROOT

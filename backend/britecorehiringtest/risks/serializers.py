@@ -1,7 +1,7 @@
 """ Serializers for Risks app. """
 from rest_framework import serializers
 
-from risks.models import RiskType, Field, FieldType
+from .models import RiskType, Field, FieldType
 
 
 class FieldTypeSerializer(serializers.ModelSerializer):
@@ -24,7 +24,7 @@ class FieldSerializer(serializers.ModelSerializer):
     options = serializers.SlugRelatedField(
         many=True,
         read_only=True,
-        slug_field='description',
+        slug_field='value',
     )
 
     class Meta:

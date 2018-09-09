@@ -56,7 +56,7 @@ class EnumOption(models.Model):
     """
     Represents an option belonging to a field of the type enum.
     """
-    description = models.CharField(max_length=255)
+    value = models.CharField(max_length=255)
     field = models.ForeignKey(Field, related_name='options', on_delete=models.CASCADE)
 
     class Meta:

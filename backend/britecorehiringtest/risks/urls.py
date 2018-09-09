@@ -2,7 +2,7 @@ from django.urls import include, re_path
 
 from rest_framework import routers
 
-from risks import views
+from . import views
 
 router = routers.DefaultRouter()
 

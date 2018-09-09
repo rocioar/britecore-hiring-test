@@ -1,7 +1,7 @@
 from rest_framework import viewsets
 
-from risks.models import RiskType, Field, FieldType
-from risks.serializers import RiskTypeSerializer, FieldSerializer, FieldTypeSerializer
+from .models import RiskType, Field, FieldType
+from .serializers import RiskTypeSerializer, FieldSerializer, FieldTypeSerializer
 
 
 class RiskTypeViewSet(viewsets.ModelViewSet):

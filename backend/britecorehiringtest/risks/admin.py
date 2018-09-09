@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from risks.models import RiskType, Field, FieldType, RiskEntry, RiskEntryValues, EnumOption
+from .models import RiskType, Field, FieldType, RiskEntry, RiskEntryValues, EnumOption
 
 
 admin.site.register(RiskType)
