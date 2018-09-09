@@ -4,8 +4,8 @@ Brite Core Hiring Test frontend
 
 Frontend for britecore-api that lets you visualize the list of RiskTypes and builds custom forms.
 
-Run in development
-------------------
+Development Environment
+-----------------------
 
 ``` bash
 # install dependencies
@@ -15,14 +15,14 @@ npm install
 npm run dev
 ```
 
-Build and Deploy
-----------------
+Deployment
+----------
 
 ``` bash
 # build for production with minification
 npm run build
 
-# install and configure aws-cli with your credentials
+# install and configure aws-cli with your AWS credentials
 pip install aws
 aws configure
 
