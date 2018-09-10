@@ -64,7 +64,7 @@ class EnumOption(models.Model):
         verbose_name_plural = 'Enum Options'
 
     def __str__(self):
-        return self.description
+        return self.value
 
 
 class RiskEntry(TimeStampedModel):
