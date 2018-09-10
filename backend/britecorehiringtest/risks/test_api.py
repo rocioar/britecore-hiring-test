@@ -4,7 +4,6 @@ import json
 import pytest
 
 from django.urls import reverse
-
 from rest_framework.test import APIRequestFactory, APIClient
 
 from .views import RiskTypeViewSet
@@ -24,7 +23,9 @@ class TestRisksAPI():
         self.client = APIClient()
 
     def test_empty_risk_type_request(self):
-        """ Test getting empty list of risk_types """
+        """
+        Test getting empty list of risk_types
+        """
         request = self.factory.get('/risk_type/', format='json')
         response = self.view(request)
         response.render()
@@ -65,6 +66,9 @@ class TestRisksAPI():
         assert response.status_code == 200
 
     def test_risk_type_get(self):
+        """
+        Test get one risk type by pk
+        """
         self.client.post(reverse('risks:risktype-list'), {'name': 'Automobile'}, format='json')
         request = self.factory.get(reverse('risks:risktype-detail', kwargs={'pk': 2}), format='json')
         response = self.viewDetail(request, pk='2')

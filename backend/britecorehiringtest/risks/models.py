@@ -1,10 +1,10 @@
 """
 Risk Types models definition
 """
-from django.db import models
-
 from model_utils.models import TimeStampedModel
 from model_utils import Choices
+
+from django.db import models
 
 
 class FieldType(models.Model):
