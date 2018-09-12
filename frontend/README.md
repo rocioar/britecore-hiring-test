@@ -23,8 +23,13 @@ Deployment
 npm run build
 
 # install and configure aws-cli with your AWS credentials
-pip install aws
+pip install awscli
 aws configure
 
 npm run deploy <bucket_name>
 ```
+
+Settings
+--------
+
+`ROOT_API`: Indicates the base url for the API, you can set it up on `config/dev.env.js` for development and `config/prod.env.js` for production.
