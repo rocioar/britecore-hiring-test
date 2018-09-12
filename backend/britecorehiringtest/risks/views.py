@@ -16,7 +16,7 @@ class FieldViewSet(viewsets.ModelViewSet):
     """
     Field API view set.
     """
-    queryset = Field.objects.all()
+    queryset = Field.objects.all().select_related('field_type').prefetch_related('options')
     serializer_class = FieldSerializer
 
 
