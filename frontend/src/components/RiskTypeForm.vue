@@ -1,16 +1,20 @@
 <template>
   <div>
     <b-form v-show="show">
-        <b-form-group v-show="show" v-for='field in riskType.fields' :key="field.name"
-                    :label="field.name" :label-for="field.name">
-            <field
-              :field="field"
-              v-model="values[field.name]"
-              :key="field.id"
-            >
-            </field>
-        </b-form-group>
-        <b-button type="submit" @click.prevent="showValues" variant="primary">Submit</b-button>
+      <b-form-group
+        v-for='field in riskType.fields'
+        :key="field.name"
+        :label="field.name"
+        :label-for="field.name"
+      >
+          <field
+            :field="field"
+            v-model="values[field.name]"
+            :key="field.id"
+          >
+          </field>
+      </b-form-group>
+      <b-button type="submit" @click.prevent="showValues" variant="primary">Submit</b-button>
     </b-form>
   </div>
 </template>

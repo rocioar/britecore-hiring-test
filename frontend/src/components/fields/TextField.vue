@@ -2,8 +2,7 @@
   <b-form-input
     v-model="inputValue"
     :id="id" type="text"
-  >
-  </b-form-input>
+  />
 </template>
 
 <script>

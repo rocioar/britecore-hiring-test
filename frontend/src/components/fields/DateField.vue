@@ -3,8 +3,7 @@
     v-model="inputValue"
     :id="id"
     type="date"
-  >
-  </b-form-input>
+  />
 </template>
 
 <script>
