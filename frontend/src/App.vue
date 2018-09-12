@@ -12,12 +12,12 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
-import NavHeader from './nav-header.vue'
+import NavHeader from './NavHeader.vue'
 
 export default {
   name: 'App',
   components: {
-    NavHeader
+    'nav-header': NavHeader
   }
 }
 </script>
