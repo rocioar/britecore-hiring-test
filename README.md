@@ -16,16 +16,3 @@ Follow the links below to deploy the backend and frontend:
 
 * [backend](https://github.com/rocioar/britecore-hiring-test/tree/master/backend#deployment)
 * [frontend](https://github.com/rocioar/britecore-hiring-test/tree/master/frontend#deployment)
-
-Demo
-----
-
-The backend was deployed using AWS Lambda and Zappa, hosted on under:
-
-* [britecoreapi.schegel.net](https://britecoreapi.schegel.net)
-
-
-The frontend was deployed on an S3 bucket and you can access it here:
-
-* [britecore.schegel.net](http://britecore.schegel.net)
-
